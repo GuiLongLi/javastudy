@@ -36,6 +36,12 @@ package threadthread;
  将当前线程的堆栈跟踪打印至标准错误流。
  * **/
 
+/**
+ 创建线程的三种方式对比
+ 采用实现Runnable 、 Callable 接口的方式创建多线程时，线程类只是实现了Runnable 接口或 Callable 接口，还可以继承其他类。
+ 使用继承Thread 类的方式创建多线程时，编写简单，如需访问当前线程，则无需使用Thread.currentThread() 方法，直接使用this 即可获取当前线程
+ * **/
+
 class ThreadStart extends Thread{
     private Thread t;
     private String threadName;
